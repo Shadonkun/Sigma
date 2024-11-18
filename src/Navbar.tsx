@@ -5,9 +5,6 @@ import { Outlet } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faUsers, faWallet, faDatabase } from '@fortawesome/free-solid-svg-icons';
 
-import { useUser } from "./UserContext";
-import SetNamePrompt from "./SetNamePrompt";
-import MainAppContent from "./App"; // Your main app content component
 
 const Layout: React.FC = () => {
 
@@ -33,9 +30,6 @@ const Layout: React.FC = () => {
   const handleEarn =() => {
     navigate('/earn');
   }
-
-  const { isNameSet } = useUser();
-
 
   return (
     <div className="w">

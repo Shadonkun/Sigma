@@ -60,7 +60,7 @@ const StreakProgressBar: React.FC = () => {
           )}
         </div>
       </div>
-      {streak === MAX_STREAK && <p className="streak-message">🎉 Goal Reached! Keep it up! 🎉</p>}
+      {streak === MAX_STREAK && <p className="streak-message">🎉 Goal Reached! Keep it up! 🎉 <br/> Last Loged in {lastLogin} </p>}
     </div>
   );
 };

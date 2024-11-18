@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useUser } from "./UserContext";
 import { useNavigate } from 'react-router-dom';  // Import navigation hook
-import { Outlet } from 'react-router-dom';
 
 const SetNamePrompt: React.FC = () => {
   const { setName } = useUser();

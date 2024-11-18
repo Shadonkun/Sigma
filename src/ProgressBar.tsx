@@ -5,7 +5,7 @@ import { useProgress } from './ProgressContext';
 
 const ProgressBar: React.FC = () => {
   const { progress, isStarted, startProgress, resetProgress } = useProgress();
-  const {points, incrementPoints, decrementPoints } = usePoints();
+  const {points, incrementPoints } = usePoints();
 
   // Handle claim action and reset progress bar
   const handleClaim = (event:React.MouseEvent) => {

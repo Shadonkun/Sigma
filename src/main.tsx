@@ -13,7 +13,7 @@ import ChangeName from './SetNamePrompt.tsx';
 import {PointsProvider} from './PointsContext.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <BrowserRouter>
+  <BrowserRouter basename={import.meta.env.BASE_URL}>
     <React.StrictMode>
       <PointsProvider>
       <UserProvider>
